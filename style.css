@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font family quy dinh chu cho toan web, background cl mau nen, color mau cua element 
+margin can le, fontsize toan trang */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f8ff;
+    color: #3c3c3c;
+}
+
+/* giới hạn kích thước của carousel */
+.carousel-item img{
+    max-height: 240px;
+    object-fit: none;
+}
+
+.container {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.container h3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.container h3:hover{
+    font-weight: bolder;
+    transform: matrix(1.1,-0.25,-0.25,1.3,0,0);
+}
+
+p{
+    text-align: justify;
+}
+
+.badge{
+    background-color: tomato;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+  
+  @keyframes example {
+    25% {background-color: tomato;}
+    50% {background-color: yellow;}
+    75% {background-color: aqua;}
+    100% {background-color: tomato;}
+  }
+
+    
+
+.col-sm-4 h5{
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
+.card{
+    width: auto;
+    height: 320px;
+    overflow:hidden;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px #909090 ;
+}
+
+.card img{
+    object-fit: cover;
+    height: 320px;
+}
+
+.progress{
+    transition: all 0.2s ease-in-out;
+}
+
+.progress:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px #909090 ;
+}
+
+.col img{
+    display:block;
+    width: 100%; 
+    min-height: 360px;
+    object-fit: cover;
+    margin: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.col img:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px #909090 ;
+}
+
+
+
+form{
+    width: 360px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-sm-6 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    float: right;
+    transition: all 0.2s ease-in-out;
+}
+
+.col-sm-6 img:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px #909090 ;
+}
+
+.col-sm-12{
+    display: flex;
+    justify-content: center;
+}
+
+.col-sm-12 img{
+    max-width: 80px;
+    max-height: 80px;
+    min-width: 24px;
+    min-height: 24px;
+    object-fit: cover;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.col-sm-12 img:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px #909090 ;
+}
+
+video{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+

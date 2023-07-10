@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio - Nguyễn Ngọc Hiếu</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--import bootstrap--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--import external css local, cdnj, google--> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<!--Quy định body để hiện scrollby nav-->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+  <!--Slide Carousel-->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="carousel1.jpg" alt="Los Angeles" class="d-block" style="width: 100%; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="carousel2.jpg" alt="Chicago" class="d-block" style="width: 100%;object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="carousel3.jpg" alt="New York" class="d-block" style="width: 100%;object-fit: cover;">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div> 
+  <!--Slide Carousel-->
+
+  <!--Sticky + Scrollby Navbar-->    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <img src="avatar.jpg" style="height: 32px; width: 32px;border-radius: 16px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item" style="margin-top:-12px;">
+                <a class="nav-link active" href="#gioi_thieu">Giới thiệu</a>
+              </li>
+              <li class="nav-item" style="margin-top:-12px;">
+                <a class="nav-link" href="#chung_chi">Chứng chỉ</a>
+              </li>
+              <li class="nav-item" style="margin-top:-12px;">
+                <a class="nav-link" href="#ki_nang">Kĩ năng</a>
+              </li>
+              <li class="nav-item" style="margin-top:-12px;">
+                <a class="nav-link" href="#kinh_nghiem">Kinh nghiệm</a>
+              </li>
+              <li class="nav-item" style="margin-top:-12px;">
+                <a class="nav-link" href="#du_an">Dự án</a>
+              </li>
+              <li class="nav-item" style="margin-top:-12px;">
+                <a class="nav-link" href="#dich_vu">Đặt dịch vụ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--Sticky Navbar-->  
+
+    <!--Giới thiệu về bản thân có ảnh và intro và các contact-->
+    <div class="container" id="gioi_thieu">
+        <h3>Giới thiệu</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="avatar.jpg">
+            </div>
+            <div class="col-sm-6" style="margin-top: auto;margin-bottom: auto;text-align: left;">
+                <h5>Hi, i'm Hiếu Nguyễn <span class="badge">graphic designer</span></h3>
+                <p>
+                  Chào mừng đến với portfolio của tôi! 
+                  Tôi là một nhà thiết kế đồ họa nhiệt huyết, với khả năng tạo ra những thiết kế gây ấn tượng mạnh mẽ và hấp dẫn mắt. 
+                  Với cái nhìn sắc bén và hiểu biết sâu sắc về lý thuyết màu sắc, kiểu chữ và cách bố trí.
+                  Tôi luôn cố gắng mang đến những thiết kế xuất sắc, hiệu quả truyền tải thông điệp và để lại ấn tượng lâu dài. 
+                  Hãy cùng hợp tác và biến những ý tưởng sáng tạo của bạn thành hiện thực!
+                </p>
+                <h5>Contact me</h5>
+                <p>
+                    <span class="fab fa-facebook-square fa-2x"></span>
+                    <span class="fab fa-pinterest-square fa-2x"></span>
+                    <span class="fab fa-twitter-square fa-2x"></span>
+                </p>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <hr>
+      </div>
+    
+    <!--giới thiệu về chứng chỉ-->
+    <div class="container" id="chung_chi">
+        <h3>Chứng chỉ</h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="university.jpg" class="float-start">
+          </div>
+
+          <div class="col-sm-6" style="margin-top: auto;margin-bottom: auto;text-align: left;">
+                <div class="textcardleft">
+                    <h5>Bằng cử nhân chuyên ngành CNTT <br>
+                      Thiết kế mỹ thuật số <span class="badge">Xuất sắc</span></h3>
+                    <p>Đại học FPT Hà Nội <br>
+                      Niên khóa 2017-2023
+
+                    <h5>Chứng chỉ Academic English: Writting <br>
+                      </h5>
+                    <p>Đại học California, Irvine <br>
+                      Niên khóa 2023
+
+                    <h5>Chứng chỉ Academic Skill for <br>
+                      University Success
+                      </h5>
+                    <p>Đại học Sydney <br>
+                      Niên khóa 2022
+                </div>  
+          </div>
+            
+        </div>
+      </div>
+
+    <div class="container">
+      <hr>
+    </div>
+
+    <!--giới thiệu về kĩ năng-->
+    <div class="container" id="ki_nang">
+        <h3>Kĩ năng</h3>
+        <div class="row">
+          <div class="col-sm-12">
+            <img src="aitool.jpg">
+            <img src="pstool.jpg">
+            <img src="prtool.jpg">
+            <img src="doctool.jpg">
+            <img src="exceltool.jpg">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+
+            <div class="col-sm-4">
+                <h5>Adobe Illustrator <span class="badge">Thành thạo</span></h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width:90%"></div>
+                </div>
+                <p>Sử dụng thành thạo công cụ</p>
+
+                <h5>Adobe Photohop<span class="badge">Thành thạo</span></h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width:90%"></div>
+                </div>
+                <p>Sử dụng thành thạo công cụ</p>
+
+                <h5>Adobe XD</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width:65%"></div>
+                </div>
+                <p>Sử dụng cơ bản công cụ</p>
+            </div>
+
+            <div class="col-sm-2">
+            </div>
+
+            <div class="col-sm-4">
+                <h5>Tin học văn phòng</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width:85%"></div>
+                </div>
+                <p>Sử dụng thành thạo công cụ</p>
+
+                <h5>Kĩ năng giao tiếp</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width:80%"></div>
+                </div>
+                <p>Trao đổi, đàm phán, thuyết trình</p>
+
+                <h5>Kĩ năng làm việc nhóm</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width:80%"></div>
+                </div>
+                <p>Trưởng nhóm lên kế hoạch, điều phối và giám sát công việc</p>
+            </div>
+
+            <div class="col-sm-1">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <hr>
+    </div>
+
+    <!--giới thiệu về sản phẩm-->
+    <div class="container" id="kinh_nghiem">
+        <h3>Kinh nghiệm</h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="workingexp.jpg">
+          </div>
+          <div class="col-sm-6" style="margin-top: auto;margin-bottom: auto;text-align: left;">
+              <h5>Công ty Cố Phần sao Tháng Tám </h5>
+              <p>Thực tập sinh thiết kế đồ họa | 12/2022 - 4/2022</p>
+              <p>Thiết kế bao bì sản phẩm, thiết kế nhận diện thương hiệu, thiết kế quảng cáo</p>
+
+              <h5>Dự án The Gloss Việt Nam </h5>
+              <p>Cộng tác viên thiết kế đồ họa | 12/2019 - 4/2020</p>
+              <p>Thiết kế ấn phẩm truyền thông trên Facebook</p>
+
+              <h5>CLB FPTU-Melody Club </h5>
+              <p>Cộng tác viên thiết kế đồ họa | 6/2019 - 12/2019</p>
+              <p>Thiết kế ấn phẩm truyền thông trên Facebook</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <hr>
+    </div>
+
+    <div class="container" id="du_an">
+      <h3>Dự án</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="project1.jpg" alt="Card image">
+            <div class="card-img-overlay" style="color: aliceblue;">
+              <h4 class="card-title">Cốc văn phòng</h4>
+              <p class="card-text">Thiết kế cốc văn phòng.</p>
+              <a href="#" class="btn btn-primary" style="justify-content: end;color: aliceblue;">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="project2.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h4 class="card-title">Bao bì sản phẩm mỹ phẩm</h4>
+              <p class="card-text">Thiết kế bao bì sản phẩm.</p>
+              <a href="#" class="btn btn-primary" style="justify-content: end;color: aliceblue;">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="project3.jpg" alt="Card image">
+            <div class="card-img-overlay" style="color: aliceblue;">
+              <h4 class="card-title">Bộ bao bì sản phẩm cà phê</h4>
+              <p class="card-text">Thiết kế bao bì sản phẩm</p>
+              <a href="#" class="btn btn-primary" style="justify-content: end;color: aliceblue;">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="project4.png" alt="Card image">
+            <div class="card-img-overlay">
+              <h4 class="card-title">Bộ bao bì sản phẩm mỹ phẩm</h4>
+              <p class="card-text">Thiết kế bao bì sản phẩm</p>
+              <a href="#" class="btn btn-primary" style="justify-content: end;color: aliceblue;">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="project5.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h4 class="card-title">Bộ bao bì sản phẩm mỹ phẩm</h4>
+              <p class="card-text">Thiết kế bao bì sản phẩm</p>
+              <a href="#" class="btn btn-primary" style="justify-content: end;color: aliceblue;">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="project6.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h4 class="card-title">Bộ bao bì bình nước quà tặng</h4>
+              <p class="card-text">Thiết kế bao bì sản phẩm</p>
+              <a href="#" class="btn btn-primary" style="justify-content: end;color: aliceblue;">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="project7.jpg" alt="Card image">
+            <div class="card-img-overlay" style="color: aliceblue;">
+              <h4 class="card-title">Mockup bao bì sản phẩm</h4>
+              <p class="card-text">Thiết kế bao bì sản phẩm.</p>
+              <a href="#" class="btn btn-primary" style="justify-content: end;color: aliceblue;">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="project8.jpg" alt="Card image">
+            <div class="card-img-overlay" style="color: aliceblue;">
+              <h4 class="card-title">Mockup bao bì sản phẩm</h4>
+              <p class="card-text">Thiết kế bao bì sản phẩm.</p>
+              <a href="#" class="btn btn-primary" style="justify-content: end;color: aliceblue;">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="project9.jpg" alt="Card image">
+            <div class="card-img-overlay">
+              <h4 class="card-title">Bộ bao bì sản phẩm mỹ phẩm</h4>
+              <p class="card-text">Thiết kế bao bì sản phẩm.</p>
+              <a href="#" class="btn btn-primary" style="justify-content: end;color: aliceblue;">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr>
+    </div>
+
+    <div class="container" style="margin-top: 24px;">
+      <video width="1080px" controls>
+        <source src="introvideo.mp4" type="video/mp4">
+      </video>
+      <p style="text-align: center;">cre:Shantanu Kuma</p>
+    </div>
+
+    <div class="container">
+      <hr>
+    </div>
+
+    <div class="container" id="dich_vu">
+      <h3>Đặt dịch vụ</h3>
+      <div class="row">
+        <div class="col">
+          <img class="card-img-top" src="contact.jpg" alt="Card image">
+          <form action="/action_page.php">
+            <br>
+            <label>Thông tin liên hệ</label>
+            <div class="input-group">
+              <span class="input-group-text"><span class="material-symbols-outlined">
+                mail
+                </span></span>
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
+            <div class="input-group">
+              <span class="input-group-text"><span class="material-symbols-outlined">
+                call
+                </span></span>
+              
+              <input type="text" class="form-control" placeholder="SĐT">
+            </div>
+            <br>
+            <label>Dịch vụ</label>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Thiết kế giao diện Web/App
+              <label class="form-check-label" for="radio1"></label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Thiết kế bao bì sản phẩm
+              <label class="form-check-label" for="radio2"></label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Thiết kế nhận diện thương hiệu
+              <label class="form-check-label"></label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">Thiết kế truyền thông quảng cáo
+              <label class="form-check-label"></label>
+            </div>
+            <br>
+            <label for="comment">Mô tả dự án</label>
+            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Hãy mô tả ngắn gọn dự án của bạn"></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Gửi yêu cầu</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <nav class="navbar bg-dark navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav" style="margin: 32px;">
+          <li class="nav-item">
+            <a class="nav-link" href="#gioi_thieu">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chung_chi">Chứng chỉ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ki_nang">Kĩ năng</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kinh_nghiem">Kinh nghiệm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#du_an">Dự án</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dich_vu">Đặt dịch vụ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    
+
+
+</body>
+</html>
